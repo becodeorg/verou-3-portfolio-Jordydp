@@ -7,7 +7,7 @@
 // backdrop.addEventListener('click', () => nav.classList.remove('open-nav'));
 
 //navigation system for Navbar
-// In the above code, first I am selecting all the links and sections.
+// In this code, first I am selecting all the links and sections.
 // After that, I defined activeLink this variable will track the current active section or link.
 // After that, I used forEach method to loop through all the links. Inside that I am access individual link and its index.
 const links = document.querySelectorAll('.link');
@@ -29,3 +29,4 @@ links.forEach((link, i) => {
         }
     })
 })
+
