@@ -3,6 +3,7 @@ header {
     padding-top: 7rem;
     overflow: hidden;
 }
+
 .header__container {
     text-align: center;
     height: 100%;
@@ -33,7 +34,7 @@ header {
     background: var(--color-primary);
 }
 
-/* img Me */
+/* Div covering img of Me */
 .me {
     background: linear-gradient(var(--color-primary), transparent);
     width: 22rem;
@@ -71,6 +72,7 @@ header {
     header {
         height: 100vh;
     }
+
     .header__socials,
     .scroll__down {
         display: none;
