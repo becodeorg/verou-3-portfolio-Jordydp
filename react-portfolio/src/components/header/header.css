@@ -24,3 +24,21 @@ header {
     left: 0;
     bottom: 3rem;
 }
+
+/* a Line under the Socials nice thing i found on Instagram */
+.header__socials::after {
+    content:'';
+    width: 1px;
+    height: 2rem;
+    background: var(--color-primary);
+}
+
+/* img Me */
+.me {
+    background: var(--color-primary);
+    width: 22rem;
+    height: 30rem;
+    position: absolute;
+    /* 50% is the middle minus half of the width */
+    left:calc(50% - 11rem);
+}
