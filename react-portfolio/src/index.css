@@ -14,11 +14,11 @@
 /* css variables */
 :root {
     /* Color Variables */
-    --color-bg: #1f1f38;
-    --color-bg-variant: #2c2c6c;
-    --color-primary: #4db5ff;
+    --color-bg: #111111;
+    --color-bg-variant: #2f2f2f;
+    --color-primary: #E18A07;
     --color-white: #f1f1f1;
-    --color-light: rgba(255, 255, 255, 0.6);
+    --color-light: #C0C0C0;
     
     --transition: all 400ms ease;
 
