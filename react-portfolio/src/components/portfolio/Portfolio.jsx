@@ -16,8 +16,10 @@ const Portfolio = () => {
             <img src={project1} alt="" />
           </div>
           <h3>Project Title</h3>
-          <a href="" className='btn'target='_blank'>Github</a>
+          <div className="project__item-cta">
+          <a href="" className='btn' target='_blank'>Github</a>
           <a href="" className='btn btn-primary' target='_blank'>Live Demo</a>
+          </div>
           </article>
           {/* end of project 1 */}
         {/* project 2 */}
@@ -26,8 +28,10 @@ const Portfolio = () => {
             <img src={project1} alt="" />
           </div>
           <h3>Project Title</h3>
-          <a href="" className='btn'target='_blank'>Github</a>
+          <div className="project__item-cta">
+          <a href="" className='btn' target='_blank'>Github</a>
           <a href="" className='btn btn-primary' target='_blank'>Live Demo</a>
+          </div>
           </article>
           {/* end of project 2 */}
         {/* project 3 */}
@@ -36,8 +40,10 @@ const Portfolio = () => {
             <img src={project1} alt="" />
           </div>
           <h3>Project Title</h3>
-          <a href="" className='btn'target='_blank'>Github</a>
+          <div className="project__item-cta">
+          <a href="" className='btn' target='_blank'>Github</a>
           <a href="" className='btn btn-primary' target='_blank'>Live Demo</a>
+          </div>
           </article>
           {/* end of project 3 */}
         {/* project 4 */}
@@ -46,8 +52,10 @@ const Portfolio = () => {
             <img src={project1} alt="" />
           </div>
           <h3>Project Title</h3>
-          <a href="" className='btn'target='_blank'>Github</a>
+          <div className="project__item-cta">
+          <a href="" className='btn' target='_blank'>Github</a>
           <a href="" className='btn btn-primary' target='_blank'>Live Demo</a>
+          </div>
           </article>
           {/* end of project 4 */}
         {/* project 5 */}
@@ -56,8 +64,10 @@ const Portfolio = () => {
             <img src={project1} alt="" />
           </div>
           <h3>Project Title</h3>
-          <a href="" className='btn'target='_blank'>Github</a>
+          <div className="project__item-cta">
+          <a href="" className='btn' target='_blank'>Github</a>
           <a href="" className='btn btn-primary' target='_blank'>Live Demo</a>
+          </div>
           </article>
           {/* end of project 5 */}
         {/* project 6 */}
@@ -66,10 +76,13 @@ const Portfolio = () => {
             <img src={project1} alt="" />
           </div>
           <h3>Project Title</h3>
-          <a href="" className='btn'target='_blank'>Github</a>
+          <div className="project__item-cta">
+          <a href="" className='btn' target='_blank'>Github</a>
           <a href="" className='btn btn-primary' target='_blank'>Live Demo</a>
+          </div>
           </article>
           {/* end of project 6 */}
+        
       </div>
     </section>
   )
