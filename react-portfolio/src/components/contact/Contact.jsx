@@ -1,10 +1,25 @@
-import React from 'react'
-import './contact.css'
-import {MdOutlineEmail} from 'react-icons/md'
-import {RiMessengerLine} from 'react-icons/ri'
-import {RiWhatsappLine} from 'react-icons/ri'
+import React, { useRef } from 'react';
+import './contact.css';
+import {MdOutlineEmail} from 'react-icons/md';
+import {RiMessengerLine} from 'react-icons/ri';
+import {RiWhatsappLine} from 'react-icons/ri';
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_6bcfw6n', 'template_uk49l94', form.current, 'ajKSz-kKabTN2SEDv')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+
+      e.target.reset();
+  };
   return (
     <section id='contact'>
       <h5>Get in Touch</h5>
@@ -27,10 +42,10 @@ const Contact = () => {
           <RiWhatsappLine className='contact__option-icon' />
           <h4>WhatsApp</h4>
           <h5>+32492067756</h5>
-          <a href="https://api.whatsapp.com/send?phone+320492067756" target='_blank'>Send a Message</a>
+          <a href="https://api.whatsapp.com/send?phone=32492067756">Send a Message</a>
         </article>
         </div>
-        <form action="">
+        <form ref={form} onSubmit={sendEmail}>
           <input type="text" name='name' placeholder='Your Full Name' required />
           <input type="email" name='email' placeholder='Your Email' required />
           <textarea name="message" placeholder='Enter Your Message Here' rows="7" required></textarea>
