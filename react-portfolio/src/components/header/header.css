@@ -1,0 +1,81 @@
+header {
+    height: 100vh;
+    padding-top: 7rem;
+    overflow: hidden;
+}
+
+.header__container {
+    text-align: center;
+    height: 100%;
+    position: relative;
+}
+/* Call to Action Button */
+.cta {
+    margin-top: 2.5rem;
+}
+
+/* Socials */
+/* placing them on the left of the Screen */
+.header__socials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+    position: absolute;
+    left: 0;
+    bottom: 3rem;
+}
+
+/* a Line under the Socials nice thing i found on Instagram */
+.header__socials::after {
+    content:'';
+    width: 1px;
+    height: 2rem;
+    background: var(--color-primary);
+}
+
+/* Div covering img of Me */
+.me {
+    background: linear-gradient(var(--color-primary), transparent);
+    width: 22rem;
+    height: 30rem;
+    position: absolute;
+    /* 50% is the middle minus half of the width */
+    left:calc(50% - 11rem);
+    margin-top: 4rem;
+    border-radius: 53% 47% 62% 38% / 48% 45% 55% 52%   ;
+    overflow: hidden;
+}
+
+/* Scroll down *also found on Instagram */
+
+.scroll__down {
+    position: absolute;
+    right: -2.3rem;
+    bottom: 5rem;
+    transform: rotate(90deg);
+    font-weight: 300;
+    font-size: 0.9rem;
+
+}
+/* * Media Queries (Medium Devices) */ 
+
+@media screen and (max-width: 1024px) {
+    header {
+        height: 68vh;
+    }
+}
+
+/* Media Queries (Small Devices) */
+
+@media screen and (max-width: 600px) {
+    header {
+        height: 100vh;
+    }
+
+    .header__socials,
+    .scroll__down {
+        display: none;
+
+    }
+}
