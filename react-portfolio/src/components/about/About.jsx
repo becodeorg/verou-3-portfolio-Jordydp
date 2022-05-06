@@ -38,19 +38,19 @@ const About = () => {
           {/* TODO:Text highlighters on keywords */}
                     <p>
                         I was born in Wetteren on 10/01/1992 and grew up in
-                        Lede. I graduated in 2010 in Accounting-Informatics.
+                        Lede. I <span>graduated in 2010 in Accounting-Informatics.</span>
                         This was my first contact with programming. I have been
                         working as a funeral advisor for 4 years now. I describe
-                        myself as a calm, flexible and responsible person who
+                        myself as a <span>calm, flexible and responsible person </span> who
                         attaches great importance to supporting and helping
                         people. Someone who is happy when the people around me
                         are happy. This may explain why I have been working in
                         healthcare for 11 years. <br /><br /> During the Covid pandemic, I
                         consulted the Dela webdeveloper several times because of
                         a problem that arose at the time. We went to search the
-                        most suitable solution together. Because of this I
+                        most suitable solution together. Because of this <span>I
                         rediscovered the passion of problem solving. This in
-                        turn brought me to programming. What started with a
+                        turn brought me to programming.</span> What started with a
                         search on Google became an activity in the little free
                         time I have. Watching Youtube tutorials, following
                         various developers on Instagram , buying and reading
@@ -58,11 +58,10 @@ const About = () => {
                         appeals to me is that I can once again help people build
                         their future. The challenge is to find out the wishes of
                         the customer and then translate them alone or together
-                        with a team into the design of their website. The
+                        with a team into the design of their website.<span> The
                         constant innovation and always being kept on my toes is
-                        something that really speaks to me. This is the reason
-                        why I have stopped my job as a funeral advisor and want
-                        to fully focus on becoming a web developer.
+                        something that really speaks to me.</span> This is the reason
+                        why I have stopped my job as a funeral advisor and started my journey as a developer.
                     </p>
                     <a href="#contact" className="btn btn-primary">
                         Let's Talk

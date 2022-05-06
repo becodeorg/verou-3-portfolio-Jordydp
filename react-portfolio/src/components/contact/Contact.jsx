@@ -41,8 +41,8 @@ const Contact = () => {
         <article className='contact__option'>
           <RiWhatsappLine className='contact__option-icon' />
           <h4>WhatsApp</h4>
-          <h5>+32492067756</h5>
-          <a href="https://api.whatsapp.com/send?phone=32492067756">Send a Message</a>
+          <h5 className='phone__number'>Email Me first</h5>
+          <a href="mailto:jdepril@outlook.com">Send a Message</a>
         </article>
         </div>
         <form ref={form} onSubmit={sendEmail}>

@@ -5,8 +5,9 @@ import {AiOutlineUser} from 'react-icons/ai'
 import {GoTools} from 'react-icons/go'
 import {BiMessageSquareDetail} from 'react-icons/bi'
 import {useState} from 'react'
+import ThemeSwitch from './ThemeSwitch'
 
-const Nav = () => {
+const Nav = (switchTheme, theme) => {
   // using a useState to create a active navbar
   const [activeNav, setActiveNav] = useState('#')
 
@@ -21,12 +22,11 @@ const Nav = () => {
       <a href="#experience"
         onClick={() => setActiveNav('#experience')}
         className={activeNav === '#experience' ? 'active' : ''}><GoTools /></a>
-      <a href="#services"
-        onClick={() => setActiveNav('#services')}
-        className={activeNav === '#services' ? 'active' : ''}><GoTools /></a>
       <a href="#contact"
       onClick={() => setActiveNav('#contact')}
       className={activeNav === '#contact' ? 'active' : ''}><BiMessageSquareDetail /></a>
+      <ThemeSwitch switchTheme={switchTheme} theme={theme} />
+
     </nav>
   )
 }
