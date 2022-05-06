@@ -13,9 +13,9 @@ const Nav = (switchTheme, theme) => {
 
   return (
     <nav>
-      <a href="#" 
+      <a href="#home" 
       onClick={() => setActiveNav('#')}
-      className={activeNav === '#' ? 'active' : ''}><AiOutlineHome /></a>
+      className={activeNav === '#home' ? 'active' : ''}><AiOutlineHome /></a>
       <a href="#about" 
         onClick={() => setActiveNav('#about')}
         className={activeNav === '#about' ? 'active' : ''}><AiOutlineUser /></a>
